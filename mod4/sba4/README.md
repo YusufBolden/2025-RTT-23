@@ -19,9 +19,9 @@ This is a dynamic **Task Management App** built with HTML, Tailwind CSS, and van
 
 ```
 .
-├── index.html         # The main HTML file
-├── script.js          # All JavaScript logic for task operations
-├── README.md          # This documentation
+├── index.html
+├── script.js
+├── README.md
 ```
 
 ---
