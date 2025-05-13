@@ -14,7 +14,7 @@ This project is a dynamic shopping cart where users can add products with names,
 
 ## Installation
 
-1. Clone this repository to your local machine:
+1. Navigate to this repository:
    ```bash
    cd 2025-RTT-23/main/mod5/lab5.1
    ```
@@ -61,6 +61,7 @@ To dynamically add items to the cart, I used JavaScript’s `document.createElem
 ### 💰 2. What steps did you take to ensure accurate updates to the total price?
 
 A dedicated `recalculateTotal()` function was used to compute the total price. It loops through each cart item using `querySelectorAll('#cart li')`, retrieves the unit price (`data-price`) and quantity, then calculates `price × quantity` for every item. The sum of all items is then updated in the `#total-price` span. This method ensures:
+
 - The total is always accurate.
 - It adapts to quantity changes and item removals.
 - It avoids floating-point errors by formatting to two decimal places.
@@ -70,10 +71,12 @@ A dedicated `recalculateTotal()` function was used to compute the total price. I
 ### 🚫 3. How did you handle invalid input for product name or price?
 
 Before adding a product, validation checks are performed:
+
 - The name must not be empty (`trim()`).
 - The price must be a positive number (`parseFloat()` and `isNaN()`).
 
 If the input is invalid:
+
 - A styled error message is shown in the `#validation-message` element.
 - The message is displayed using `style.display = 'block'` and hidden after 3 seconds using `setTimeout()`.
 - The input is focused again for correction.
