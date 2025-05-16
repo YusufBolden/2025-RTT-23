@@ -7,7 +7,6 @@ const validationMessage = document.getElementById("validation-message");
 
 let totalPrice = 0;
 
-// Show validation message with fallback visibility
 function showValidationMessage(msg) {
   validationMessage.textContent = msg;
   validationMessage.style.display = "block";
@@ -19,7 +18,6 @@ function showValidationMessage(msg) {
   }, 3000);
 }
 
-// Recalculate total based on all cart items
 function recalculateTotal() {
   let newTotal = 0;
   document.querySelectorAll("#cart li").forEach((item) => {
@@ -32,14 +30,12 @@ function recalculateTotal() {
   totalPriceSpan.textContent = totalPrice.toFixed(2);
 }
 
-// Remove a product from cart
 function removeItem(event) {
   const item = event.target.closest("li");
   item.remove();
   recalculateTotal();
 }
 
-// Add a new product to the cart
 addProductButton.addEventListener("click", () => {
   const name = productNameInput.value.trim();
   const price = parseFloat(productPriceInput.value);
@@ -81,7 +77,6 @@ addProductButton.addEventListener("click", () => {
 
   recalculateTotal();
 
-  // Clear inputs
   productNameInput.value = "";
   productPriceInput.value = "";
 });
