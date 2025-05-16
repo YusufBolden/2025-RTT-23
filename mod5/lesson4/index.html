@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+    <div id="faq-container" class="w-full max-w-xl space-y-4">
+      <div class="faq-item bg-white shadow rounded">
+        <div class="question cursor-pointer px-4 py-3 hover:underline">
+          What is JavaScript?
+        </div>
+        <div class="answer px-4 py-3 hidden">
+          JavaScript is a programming language for the web.
+        </div>
+      </div>
+      <div class="faq-item bg-white shadow rounded">
+        <div class="question cursor-pointer px-4 py-3 hover:underline">
+          What is the DOM?
+        </div>
+        <div class="answer px-4 py-3 hidden">
+          The DOM is the Document Object Model.
+        </div>
+      </div>
+      <div class="faq-item bg-white shadow rounded">
+        <div class="question cursor-pointer px-4 py-3 hover:underline">
+          What is event delegation?
+        </div>
+        <div class="answer px-4 py-3 hidden">
+          Event delegation is a technique for handling events efficiently.
+        </div>
+      </div>
+    </div>
+
+    <button
+      id="reset-button"
+      class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+    >
+      Reset All
+    </button>
+  </body>
+</html>
