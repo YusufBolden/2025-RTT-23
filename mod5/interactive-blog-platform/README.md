@@ -53,7 +53,7 @@ All posts are dynamically rendered, and changes are reflected in real-time in th
 
 ## 📂 File Structure
 ```
-personal-blog-sba/
+interactive-blog-platform/
 ├── index.html # Main HTML structure
 ├── styles.css # Tailwind-based styling (no custom styles)
 ├── script.js # JavaScript logic (CRUD + localStorage)
