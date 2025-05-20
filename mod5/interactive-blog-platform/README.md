@@ -54,8 +54,7 @@ All posts are dynamically rendered, and changes are reflected in real-time in th
 ## 📂 File Structure
 ```
 interactive-blog-platform/
-├── index.html # Main HTML structure
-├── styles.css # Tailwind-based styling (no custom styles)
+├── index.html # Main HTML structure with Tailwind-based styling (no custom styles)
 ├── script.js # JavaScript logic (CRUD + localStorage)
 └── README.md # Project overview and documentation
 ```
