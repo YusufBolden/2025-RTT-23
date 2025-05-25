@@ -78,7 +78,7 @@ Each product (physical or digital) shares a base Product class but overrides how
 
     Utility modules are used to keep logic clean and reusable.
 
-💡 Example Output
+💡 Example Outputs
 
 ```
 📄 Name: E-Book
@@ -87,7 +87,6 @@ Each product (physical or digital) shares a base Product class but overrides how
 🧾 Tax: $0.00
 ✅ Final Price: $17.99
 💾 File Size: 700 MB
-```
 
 ---
 
