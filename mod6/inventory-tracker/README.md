@@ -58,21 +58,15 @@ cd inventory-tracker
 
 ### 2. Install dependencies
 
-```npm install
-
-```
+`npm install`
 
 ### 3. Compile TypeScript
 
-```npx tsc
-
-```
+`npx tsc`
 
 ### 4. Run the project
 
-```node dist/main.js
-
-```
+`node dist/main.js`
 
 🛠️ How It Works
 
@@ -86,12 +80,14 @@ Each product (physical or digital) shares a base Product class but overrides how
 
 💡 Example Output
 
+```
 📄 Name: E-Book
 🆔 SKU: DIG-001
 💵 Price (before tax): $19.99
 🧾 Tax: $0.00
 ✅ Final Price: $17.99
 💾 File Size: 700 MB
+```
 
 ---
 
@@ -102,6 +98,8 @@ Each product (physical or digital) shares a base Product class but overrides how
 ✅ Final Price: $989.99
 ⚖️ Weight: 2.5 kg
 
+```
+
 ## 🧑‍💻 Author
 
 This project was developed by **Yusuf Bolden** as part of a learning exercise in object-oriented programming with TypeScript.
@@ -111,3 +109,4 @@ Feedback and suggestions are welcome!
 ## 📚 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+```
