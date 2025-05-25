@@ -29,7 +29,8 @@ A beginner-friendly inventory management system built with TypeScript using obje
 
 ## 🏗️ Project Structure
 
-`inventory-tracker/
+```
+inventory-tracker/
 ├── src/
 │ ├── models/
 │ │ ├── Product.ts
@@ -41,7 +42,8 @@ A beginner-friendly inventory management system built with TypeScript using obje
 │ └── main.ts
 ├── dist/ (generated after build)
 ├── tsconfig.json
-└── README.md`
+└── README.md
+```
 
 ---
 
