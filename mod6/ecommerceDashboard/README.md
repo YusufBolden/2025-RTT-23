@@ -1,6 +1,7 @@
 📦 E-Commerce Dashboard
 
 A TypeScript-based simulation of an e-commerce dashboard that fetches product catalog, reviews, and sales reports using asynchronous API calls. The application features robust error handling, custom error classes, and a retry mechanism for failed API calls simulating real-world asynchronous programming.
+
 🚀 Features
 
     📡 Simulated asynchronous API calls using Promises
