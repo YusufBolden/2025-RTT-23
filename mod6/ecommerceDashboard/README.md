@@ -1,6 +1,6 @@
 📦 E-Commerce Dashboard
 
-A TypeScript-based simulation of an e-commerce dashboard that fetches product catalog, reviews, and sales reports using asynchronous API calls. The application features robust error handling, custom error classes, and a retry mechanism for failed API calls—making it a great exercise in real-world asynchronous programming.
+A TypeScript-based simulation of an e-commerce dashboard that fetches product catalog, reviews, and sales reports using asynchronous API calls. The application features robust error handling, custom error classes, and a retry mechanism for failed API calls simulating real-world asynchronous programming.
 🚀 Features
 
     📡 Simulated asynchronous API calls using Promises
@@ -37,4 +37,36 @@ cd ecommerce-dashboard
 2. Install dependencies
 ```
 npm install
+```
+3. Compile TypeScript
+```
+npx tsc
+```
+4. Run the app
+```
+node dist/index.js
+```
+You should see logs in your terminal for product data, reviews, sales reports, and any errors with retry behavior.
+
+📂 Example Output
+```
+Starting e-commerce dashboard data fetch...
+Product Catalog:
+┌─────────┬─────┬────────────┬───────┐
+│ (index) │ id  │   name     │ price │
+├─────────┼─────┼────────────┼───────┤
+│    0    │  1  │  'Laptop'  │ 1200  │
+│    1    │  2  │ 'Headphones' │ 200 │
+└─────────┴─────┴────────────┴───────┘
+
+Reviews for Laptop:
+┌─────────┬────────┬──────────────────────────────┐
+│ (index) │ rating │          comment             │
+├─────────┼────────┼──────────────────────────────┤
+│    0    │   5    │ 'Excellent product!'         │
+│    1    │   4    │ 'Very good, but could be...' │
+└─────────┴────────┴──────────────────────────────┘
+...
+
+Finished attempting all API calls.
 ```
