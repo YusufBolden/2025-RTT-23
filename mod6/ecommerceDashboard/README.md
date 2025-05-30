@@ -104,7 +104,7 @@ Finished attempting all API calls.
 
 ## Author
 
-Created by Yusuf Bolden as part of a Promises and Error Handling labb assignment.
+Created by [Yusuf Bolden](https://github.com/YusufBolden) as part of a Promises and Error Handling labb assignment.
 
 ## License
 
