@@ -1,4 +1,4 @@
-# Product Listing Project
+# 🛒 E-Commerce Product Viewer (TypeScript + DOM Manipulation)
 
 ## Project Overview
 
@@ -10,72 +10,118 @@ This project is a simple product listing web application that fetches product da
 
 ![](./src/images/dashboard.png)
 
----
-
-## Features
-
-- Fetches product data asynchronously.
-- Calculates discounted prices and tax amounts.
-- Displays products dynamically in the browser DOM.
-- Implements object-oriented programming principles.
-- Handles errors gracefully using try/catch and custom error classes.
-- Uses modern TypeScript features including async/await, closures, higher-order functions, and callbacks.
-
----
-
-## How to Run
-
-1. Clone the repository.
-2. Open `index.html` in a modern browser.
-3. View the products displayed dynamically in the browser UI.
-
----
-
-## Reflection
-
-This project leverages TypeScript's strong typing and OOP principles to define a `Product` class that encapsulates product data and related methods such as calculating discounts and taxes. TypeScript’s features ensured the code is type-safe and maintainable.
-
-Asynchronous operations were managed using async/await, enabling non-blocking fetch requests. Promises were handled efficiently, with try/catch blocks providing comprehensive error management to avoid unhandled promise rejections.
-
-Closures were utilized in helper functions to maintain state and provide clean interfaces. Higher-order functions and callbacks facilitated modular, reusable logic, especially in processing the fetched product arrays.
-
-Initially, product information was logged to the console using `console.log()`. To improve the user experience, I replaced console outputs with DOM manipulation, dynamically creating and injecting HTML elements to display products directly in the browser interface.
-
-Regarding styling, the project uses a single `styles.css` file linked in the HTML. I confirmed that an `output.css` file was generated at one point but is not currently referenced anywhere in the codebase. To verify this, I conducted a full project-wide search for any mentions of `output.css` across all files using `grep -r "output.css"` as follows:
+## 📁 Project Structure
 
 ```
-grep -r "output.css" .
-grep -r "output.css" ./src
-grep -r "output.css" ./public
-grep -r "output.css" ./dist
-grep -r "output.css" ./index.html
-grep -r "output.css" ./main.js
+e-commerce-system/
+├── dist/
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+│
+├── src/
+│   ├── api/
+│   │   └── productsAPI.ts
+│   │
+│   ├── classes/
+│   │   ├── Product.ts
+│   │   └── ProductManager.ts
+│   │
+│   ├── utils/
+│   │   ├── calculateDiscount.ts
+│   │   ├── calculateTax.ts
+│   │   ├── handleError.ts
+│   │   └── retry.ts
+│   │
+│   ├── index.ts
+│   ├── main.ts
+│   └── styles.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
+---
 
-Finding no references, I deleted the `output.css` file to keep the project clean and avoid unnecessary clutter.
+## 🧠 Features
 
-This choice was intentional over using bundlers like Parcel or Vite due to the simplicity of the project and to maintain minimal dependencies.
-
-The UI was set up with careful CSS styling to ensure a clean layout. This involved iterative debugging and fixing console errors related to script loading and DOM manipulation timing to achieve a smooth and responsive user interface.
+- Type-safe product model using TypeScript classes
+- Object-oriented programming (OOP) to manage product data
+- Discount and tax calculation using utility functions
+- DOM manipulation for browser-based product display
+- Error handling via `try/catch` and custom error logic
+- Async/await to fetch product data from an external API
+- Transitioned from `console.log()` to browser UI rendering
+- Custom fallback UI in case of API failure
 
 ---
 
-## .gitignore
+## 🔧 Technologies Used
 
-The following entries are included to keep the repository clean:
-
-```
-node_modules/
-dist/
-.env
-*.log
-.DS_Store
-.vscode/
-```
+- TypeScript
+- HTML5 + DOM API
+- CSS (via `styles.css`)
+- DummyJSON Products API
 
 ---
 
-## Author
+## ⚙️ Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ecommerce-system.git
+   cd ecommerce-system
+   ```
+
+2. Install TypeScript:
+   ```bash
+   npm install -g typescript
+   ```
+
+3. Compile TypeScript:
+   ```bash
+   tsc
+   ```
+
+4. Open `index.html` in your browser.
+
+---
+
+## ✍️ Reflection
+
+This project applies core TypeScript features and object-oriented programming (OOP) principles. A `Product` class was defined with strong typing to encapsulate product data and logic. Type annotations were used throughout to enforce type safety. Utility functions for discount and tax calculation demonstrate functional modularity and reusability.
+
+Initially, `console.log()` was used to verify product data, but was later replaced with DOM manipulation to display results directly in the browser. This involved querying the DOM with `document.getElementById`, and dynamically updating the inner HTML of elements using template literals and JavaScript logic.
+
+Asynchronous operations were handled with `async/await` and `fetch` to retrieve data from the DummyJSON API. A `try/catch` block was used to gracefully handle failed requests, and custom error classes were introduced to encapsulate errors more clearly. Debugging required catching both API issues and runtime rendering errors.
+
+A core challenge was a mysterious `output.css` file appearing in the directory. After multiple `grep` runs confirmed that the file wasn’t referenced in any part of the codebase, it was safely deleted. This was likely the result of a misconfigured Tailwind or PostCSS build attempt during early setup, which was later replaced with direct `styles.css` for simplicity.
+
+Additional challenges included configuring the `tsconfig.json`, ensuring the compiled JavaScript matched the DOM structure, and avoiding scope-related bugs. Higher-order functions like `.map()` and `.forEach()` were used to iterate and render multiple products efficiently. Closures were used implicitly when accessing variables within asynchronous functions that updated the DOM.
+
+Overall, this project demonstrates an end-to-end understanding of TypeScript fundamentals, asynchronous programming, error handling, and DOM rendering for a real-world use case.
+
+---
+
+## 🧪 Grep Verification
+
+To ensure `output.css` was not referenced, these checks were run:
+
+```bash
+grep -r 'output.css' .
+grep -r 'output' .
+grep -r 'tailwind' .
+grep -r 'parcel' .
+grep -r 'vite' .
+```
+
+All returned no references. It was concluded `output.css` could be deleted.
+
+---
+
+## 🧑🏿‍💻 Author
 
 Created by [Yusuf Bolden](https://github.com/YusufBolden) as part of the Skills-Based Assessment (SBA 6) in Typescript features, object-oriented programming (OOP) principles, asynchronous operations, error handling, and API interaction.
 
