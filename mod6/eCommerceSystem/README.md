@@ -1,12 +1,12 @@
 # 🛒 E-Commerce Product Viewer
 
-## Project Overview
+## 📘 Project Overview
 
 This project is a product listing web application that fetches product data, applies discounts and taxes, and displays the final prices in a browser interface. It is built using TypeScript, JavaScript, HTML and CSS with an emphasis on clean, modular code and asynchronous data handling.
 
 ---
 
-## Dashboard Screenshot
+## 📸 Dashboard Screenshot
 
 ![](./src/images/dashboard.png)
 
