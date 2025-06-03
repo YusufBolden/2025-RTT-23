@@ -43,6 +43,7 @@ e-commerce-system/
 ├── tsconfig.json
 └── README.md
 ```
+
 ---
 
 ## 🧠 Features
@@ -63,24 +64,27 @@ e-commerce-system/
 - TypeScript
 - HTML5 + DOM API
 - CSS
-- [DummyJSON Products API](https://dummyjson.com/docs/products) 
+- [DummyJSON Products API](https://dummyjson.com/docs/products)
 
 ---
 
 ## ⚙️ Setup Instructions
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/ecommerce-system.git
    cd ecommerce-system
    ```
 
 2. Install TypeScript:
+
    ```bash
    npm install -g typescript
    ```
 
 3. Compile TypeScript:
+
    ```bash
    tsc
    ```
@@ -129,6 +133,6 @@ Feedback and suggestions are welcome!
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
