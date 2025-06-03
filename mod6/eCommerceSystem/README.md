@@ -86,5 +86,3 @@ Feedback and suggestions are welcome!
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-Thank you for reviewing this project.
