@@ -1,8 +1,8 @@
-# 🛒 E-Commerce Product Viewer (TypeScript + DOM Manipulation)
+# 🛒 E-Commerce Product Viewer
 
 ## Project Overview
 
-This project is a simple product listing web application that fetches product data, applies discounts and taxes, and displays the final prices in a browser interface. It is built using TypeScript, JavaScript, and CSS with an emphasis on clean, modular code and asynchronous data handling.
+This project is a product listing web application that fetches product data, applies discounts and taxes, and displays the final prices in a browser interface. It is built using TypeScript, JavaScript, HTML and CSS with an emphasis on clean, modular code and asynchronous data handling.
 
 ---
 
@@ -62,8 +62,8 @@ e-commerce-system/
 
 - TypeScript
 - HTML5 + DOM API
-- CSS (via `styles.css`)
-- DummyJSON Products API
+- CSS
+- [DummyJSON Products API](https://dummyjson.com/docs/products) 
 
 ---
 
