@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <script defer src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-green-400 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md text-center">
+      <h1 class="text-2xl font-bold mb-4">Guess the Number (1–100)</h1>
+      <input
+        id="guessInput"
+        type="number"
+        min="1"
+        max="100"
+        class="border p-2 w-full mb-4 rounded"
+        placeholder="Enter your guess"
+      />
+      <button
+        id="submitGuess"
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 w-full"
+      >
+        Submit Guess
+      </button>
+
+      <div id="message" class="mt-4 text-lg font-semibold"></div>
+      <div class="mt-2 text-sm text-gray-700">
+        Guessed Numbers: <span id="guessedList">0</span>
+      </div>
+      <div class="mt-1 text-sm text-gray-700">
+        Guesses Left: <span id="guessesLeft">5</span>
+      </div>
+      <button
+        id="playAgain"
+        class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 max-w-md hidden"
+      >
+        Play Again
+      </button>
+    </div>
+  </body>
+</html>

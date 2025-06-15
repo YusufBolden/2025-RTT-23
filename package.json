@@ -1,0 +1,8 @@
+{
+  "name": "rtt-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy-component-library": "cd mod9/component-library && npm run deploy"
+  }
+}
